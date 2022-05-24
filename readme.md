@@ -1,4 +1,4 @@
-File importer for old filehost made with express and prisma.
+File importer for [old filehost](https://github.com/thegamerx1/filehost) made with express and prisma.
 
 To start:
 
