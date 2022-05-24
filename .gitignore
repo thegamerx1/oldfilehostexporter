@@ -3,3 +3,4 @@ data/files/*
 data/database.db
 !data/files/.keep
 node_modules
+config.json
