@@ -75,6 +75,7 @@ async function parseFile(
 			userAgent: "import",
 		}
 	})
+
 	try {
 		let output = validate({
 			name: file.name,
@@ -85,7 +86,7 @@ async function parseFile(
 			destruct: !!file.destruct ? new Date(file.destruct + config.EPOCH).toISOString() : null,
 			ip: file.ip,
 			original: file.original,
-			outviews,
+			views: outviews,
 		})
 		return output
 	} catch (e) {
