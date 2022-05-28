@@ -62,8 +62,7 @@ async function parseFile(
 		return null
 	}
 
-	let views = await db.all("select * from views where id = ?", file.id)
-
+	let views = await db.all("select * from views where fileId = ?", file.id)
 	let outviews: Array<{
 		ip: string
 		time: string
